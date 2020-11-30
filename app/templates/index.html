@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+<!-- {% import 'macros.html' as macro %} -->
+{% block content %}
+<div class="container" id="particles-js">
+    <h2 class="text-center" id="posts" style="margin-top: 3%;color: black">One Minute Pitch</h2><br><br><br>
+    <!-- <strong style="font-size: 20px;">{{ macro.displayCategoryList(category) }} </strong> -->
+    <ul class="nav nav-pills nav-justified nav-fill" role="tablist">
+        <li class="nav-item">
+            <a id="cats" class="nav-link" data-toggle="tab" href="#all" style="color: black"><strong>Pitches</strong></a><br>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cats" data-toggle="tab" href="#quotes" style="color: black"><strong>Quotes</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cats" data-toggle="tab" href="#bible" style="color: black"><strong>Bible</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cats" data-toggle="tab" href="#news" style="color: black"><strong>News</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cats" data-toggle="tab" href="#general" style="color: black"><strong>General</strong></a>
+        </li>
+
+    </ul>
+    <hr>
+    <br><br>
+    <h5>This is an application that allows a user to create a pitch depending on a certain category and add pitch
+        content. A user can also be able to comment and vote on another user's pitches.</h5>
+    <div class="tab-content">
+        <div class="container tab-pane active" id="all"> <br>
+            {{macro.display(pitches)}} </div>
+        <div class="container tab-pane fade" id="quotes"> <br>
+            {{macro.display(quote_pitch)}} </div>
+
+        <div class="container tab-pane fade" id="bible"> <br>
+            {{macro.display(bible_pitch)}} </div>
+        <div class="container tab-pane fade" id="news"> <br>
+            {{macro.display(news_pitch)}} </div>
+        <div class="container tab-pane fade" id="general"> <br>
+            {{macro.display(general_pitch)}} </div>
+
+    </div>
+    <!-- <h3 class="add-category"><a class="btn btn-primary" href="/add/new_category" style="background-color:#002457; float:right;"><span
+                aria-hidden="true"> ADD CATEGORY </span></a></h3> -->
+</div>
+{% endblock %}
