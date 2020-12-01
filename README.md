@@ -17,7 +17,8 @@ This website will:
 1. Display the pitches that have been posted.
 2. Allow user to pitch an idea.
 3. Allow user to review pitches that have been posted.
-4. Allow user to select a category
+4. Allow user to select a category.
+5. Allow user to comment.
 
 ## Dependencies
 
