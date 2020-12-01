@@ -57,6 +57,8 @@ Python Flask, Postgresql and Heroku.
 ## Support and contact details
 
 For any issues or questions, ideas or concern, please contact me.
+phone number:0788851013
+E-mail:uwarosine10@gmail.com
 
 ### License
 
